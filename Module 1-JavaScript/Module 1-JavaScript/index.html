@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Local Community Event Portal</title>
+  <style>
+    .event-card { border: 1px solid #ccc; padding: 10px; margin: 10px; border-radius: 5px; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Local Community Event Portal</h1>
+  <input type="text" id="searchInput" placeholder="Search by name..." />
+  <select id="categoryFilter">
+    <option value="">All Categories</option>
+    <option value="Music">Music</option>
+    <option value="Workshop">Workshop</option>
+  </select>
+
+  <div id="eventsContainer"></div>
+
+  <form id="registrationForm">
+    <h3>Register for an Event</h3>
+    <input type="text" name="name" placeholder="Your Name" required /><br />
+    <input type="email" name="email" placeholder="Your Email" required /><br />
+    <select name="event" required>
+      <option value="">Select Event</option>
+    </select><br />
+    <button type="submit">Submit</button>
+    <p id="formMessage" class="error"></p>
+  </form>
+
+  <script src="main.js"></script>
+</body>
+</html>
